@@ -37,7 +37,7 @@
           @click="prevCharacter" 
           :disabled="currentIndex === 0"
           class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
-          PRVE
+          PREV
         </button>
         <button 
           @click="nextCharacter" 
