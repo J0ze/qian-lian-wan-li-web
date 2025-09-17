@@ -1,11 +1,29 @@
 <template>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div v-for="(img, index) in images" :key="index" class="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform">
-      <img :src="img" alt="" class="w-full h-48 object-cover"/>
+  <div
+    class="grid gap-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center"
+  >
+    <div
+      v-for="(img, index) in images"
+      :key="index"
+      class="overflow-hidden rounded-2xl shadow-lg transform transition duration-500 hover:scale-105"
+    >
+      <img
+        :src="img"
+        class="w-full h-auto object-cover"
+      />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{ images: string[] }>()
+defineProps<{
+  images: string[]
+}>()
 </script>
+
+<style scoped>
+.grid {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+</style>

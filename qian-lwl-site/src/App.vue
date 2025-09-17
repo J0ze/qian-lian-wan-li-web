@@ -2,12 +2,11 @@
   <div class="min-h-screen bg-black text-white">
     <NavBar />
     
-    <!-- 页面切换动画 -->
     <transition
       name="page"
       mode="out-in"
     >
-      <router-view :key="$route.fullPath" />
+      <router-view />
     </transition>
 
     <Footer />
@@ -20,7 +19,7 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <style scoped>
-/* 页面淡入淡出动画 */
+/* 你的动画样式 */
 .page-enter-active, .page-leave-active {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }

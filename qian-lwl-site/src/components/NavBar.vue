@@ -1,13 +1,15 @@
 <template>
-  <nav class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-md z-50 flex justify-center gap-8 p-4 text-white font-bold text-lg">
-    <RouterLink to="/" class="hover:text-pink-400 transition-colors">游戏简介</RouterLink>
-    <RouterLink to="/characters" class="hover:text-pink-400 transition-colors">人物介绍</RouterLink>
-    <RouterLink to="/world" class="hover:text-pink-400 transition-colors">背景介绍</RouterLink>
-    <RouterLink to="/about" class="hover:text-pink-400 transition-colors">关于</RouterLink>
-    <RouterLink to="/gallery" class="hover:text-pink-400 transition-colors">画廊</RouterLink>
+  <nav class="w-full bg-white shadow-sm px-8 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-gray-700">千连万理</h1>
+    <ul class="flex gap-6 text-gray-600 font-medium">
+      <li><RouterLink to="/">游戏简介</RouterLink></li>
+      <li><RouterLink to="/characters">人物介绍</RouterLink></li>
+      <li><RouterLink to="/world">背景介绍</RouterLink></li>
+      <li><RouterLink to="/gallery">画廊</RouterLink></li>
+      <li><RouterLink to="/about">关于</RouterLink></li>
+    </ul>
   </nav>
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
 </script>

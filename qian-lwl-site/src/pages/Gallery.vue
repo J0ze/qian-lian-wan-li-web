@@ -1,17 +1,59 @@
 <template>
-  <section class="min-h-screen p-8 bg-black text-white">
-    <h2 class="text-4xl font-bold text-pink-400 mb-6">画廊</h2>
-    <GalleryGrid :images="images"/>
+  <section 
+    class="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-6"
+  >
+    <div class="text-center mb-16 pt-8 animate-fadeIn">
+      <h1 class="text-6xl font-bold text-gray-800 tracking-wider">GALLERY</h1>
+      <p class="text-lg text-gray-600 mt-2 font-serif">源于美术组</p>
+    </div>
+
+    <div v-if="showImages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
+      <div 
+        v-for="(image, index) in images" 
+        :key="index"
+        class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105"
+      >
+        <img
+          :src="image"
+          alt="Gallery Image"
+          class="w-full h-auto object-cover"
+        />
+      </div>
+    </div>
+
+    <div v-else class="text-center p-8">
+      <p class="text-xl md:text-2xl font-semibold text-gray-600">
+        CG 正在筹办中，敬请期待！
+      </p>
+    </div>
+
   </section>
 </template>
 
 <script setup lang="ts">
-import GalleryGrid from '@/components/GalleryGrid.vue'
-import { ref } from 'vue'
+import { ref } from 'vue';
+
+// 这行代码控制画作的显示。
+// 只需要将 false 改为 true，下方的画作就会重新显示。
+const showImages = ref(false);
 
 const images = ref<string[]>([
   '/assets/gallery/scene1.jpg',
   '/assets/gallery/scene2.jpg',
-  '/assets/gallery/scene3.jpg'
-])
+  '/assets/gallery/scene3.jpg',
+  '/assets/gallery/scene4.jpg',
+  '/assets/gallery/scene5.jpg',
+  // 你可以根据需要添加更多图片
+]);
 </script>
+
+<style scoped>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+</style>
