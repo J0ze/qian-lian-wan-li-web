@@ -2,12 +2,12 @@
   <section 
     class="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-6"
   >
-    <div class="text-center mb-16 pt-8 animate-fadeIn">
-      <h1 class="text-6xl font-bold text-gray-800 tracking-wider">GALLERY</h1>
-      <p class="text-lg text-gray-600 mt-2 font-serif">源于美术组</p>
+    <div class="text-center mb-10 sm:mb-16 pt-8 animate-fadeIn">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 tracking-wider">GALLERY</h1>
+      <p class="text-base sm:text-lg text-gray-600 mt-2 font-serif">源于美术组</p>
     </div>
 
-    <div v-if="showImages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
+    <div v-if="showImages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl w-full">
       <div 
         v-for="(image, index) in images" 
         :key="index"
@@ -21,8 +21,8 @@
       </div>
     </div>
 
-    <div v-else class="text-center p-8">
-      <p class="text-xl md:text-2xl font-semibold text-gray-600">
+    <div v-else class="text-center p-4 sm:p-8">
+      <p class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-600">
         CG 正在筹办中，敬请期待！
       </p>
     </div>

@@ -1,41 +1,41 @@
 <template>
   <section class="min-h-screen bg-gray-50 text-gray-800 flex flex-col items-center py-12 px-6">
     
-    <div class="text-center mb-16 pt-8 animate-fadeIn">
-      <h1 class="text-6xl font-bold text-gray-800 tracking-wider">ABOUT</h1>
-      <p class="text-lg text-gray-600 mt-2 font-serif">关于我们</p>
+    <div class="text-center mb-10 sm:mb-16 pt-8 animate-fadeIn">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 tracking-wider">ABOUT</h1>
+      <p class="text-base sm:text-lg text-gray-600 mt-2 font-serif">关于我们</p>
     </div>
 
-    <div class="max-w-4xl w-full p-8 bg-white rounded-lg shadow-xl animate-fadeIn delay-200">
+    <div class="max-w-4xl w-full p-4 sm:p-8 bg-white rounded-lg shadow-xl animate-fadeIn delay-200">
       
-      <h2 class="text-2xl font-bold mb-6 border-b pb-2">游戏信息</h2>
+      <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 border-b pb-2">游戏信息</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-b last:border-b-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">游戏类型</div>
         <div class="text-gray-800">Visual Novel</div>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-b last:border-b-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">游戏语言</div>
         <div class="text-gray-800">简体中文</div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-b last:border-b-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">限制年龄</div>
         <div class="text-gray-800">ALL</div>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-b last:border-b-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">平台</div>
         <div class="text-gray-800">Steam</div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-b last:border-b-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">制作组</div>
         <div class="text-gray-800">千连万理开发组</div>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4 border-b last:border-b-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">社交媒体</div>
         <div class="text-gray-800">QQ 群号：1020939651</div>
       </div>

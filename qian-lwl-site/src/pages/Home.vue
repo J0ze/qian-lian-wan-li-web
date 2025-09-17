@@ -2,14 +2,14 @@
   <section 
     class="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gray-50" 
   >
-    <h1 class="text-6xl font-bold text-gray-800 mb-6 animate-fadeIn">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-4 sm:mb-6 animate-fadeIn">
       {{ game.title }}
     </h1>
-    <p class="text-xl text-gray-600 max-w-2xl mx-auto animate-fadeIn delay-200">
+    <p class="text-lg sm:text-xl max-w-2xl mx-auto text-gray-600 animate-fadeIn delay-200">
       {{ game.description }}
     </p>
     
-    <p class="text-base text-gray-600 mt-10 animate-fadeIn delay-400">
+    <p class="text-sm sm:text-base text-gray-600 mt-8 sm:mt-10 animate-fadeIn delay-400">
       开发者: {{ developerName }}
     </p>
   </section>
