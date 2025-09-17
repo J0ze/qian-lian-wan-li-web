@@ -27,7 +27,7 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
         <div class="font-bold text-gray-600">平台</div>
-        <div class="text-gray-800">Steam</div>
+        <div class="text-gray-800">Bilibili</div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-4 py-3 sm:py-4 border-b last:border-b-0">
