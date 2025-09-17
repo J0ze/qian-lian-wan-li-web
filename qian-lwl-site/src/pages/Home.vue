@@ -16,23 +16,42 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue';
+import { onMounted, watch } from 'vue';
+import { useRoute } from 'vue-router';
 import { useGameStore } from '@/stores/game';
 
-// 获取 Store 实例
+// 获取路由实例
+const route = useRoute();
+
 const game = useGameStore();
 
-const props = defineProps({
+defineProps({
   developerName: {
     type: String,
     default: '千连万理开发组'
   }
 });
 
-// 在组件挂载时调用 Store 中的 fetchData
-onMounted(() => {
+const initializeData = () => {
   game.fetchData();
+  console.log("页面已初始化或路由已变化。");
+};
+
+// 1. 在组件第一次挂载时，初始化数据
+onMounted(() => {
+  initializeData();
 });
+
+// 2. 监听路由变化，以防组件被复用
+// 传入两个参数：第一个是数据源，第二个是回调函数
+watch(
+  () => route.fullPath,
+  (newPath, oldPath) => {
+    if (newPath !== oldPath) {
+      initializeData();
+    }
+  }
+);
 </script>
 
 <style scoped>
