@@ -19,7 +19,6 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <style scoped>
-/* 你的动画样式 */
 .page-enter-active, .page-leave-active {
   transition: opacity 0.5s ease, transform 0.5s ease;
 }

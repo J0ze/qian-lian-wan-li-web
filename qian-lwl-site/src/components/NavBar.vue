@@ -23,11 +23,11 @@
     </ul>
 
     <ul class="hidden md:flex gap-6 text-gray-600 font-medium items-center">
-        <li><RouterLink to="/" class="hover:text-blue-500 transition-colors">游戏简介</RouterLink></li>
-        <li><RouterLink to="/characters" class="hover:text-blue-500 transition-colors">人物介绍</RouterLink></li>
-        <li><RouterLink to="/world" class="hover:text-blue-500 transition-colors">背景介绍</RouterLink></li>
-        <li><RouterLink to="/gallery" class="hover:text-blue-500 transition-colors">画廊</RouterLink></li>
-        <li><RouterLink to="/about" class="hover:text-blue-500 transition-colors">关于</RouterLink></li>
+        <li><RouterLink to="/" class="hover:text-blue-500 transition-colors whitespace-nowrap">游戏简介</RouterLink></li>
+        <li><RouterLink to="/characters" class="hover:text-blue-500 transition-colors whitespace-nowrap">人物介绍</RouterLink></li>
+        <li><RouterLink to="/world" class="hover:text-blue-500 transition-colors whitespace-nowrap">背景介绍</RouterLink></li>
+        <li><RouterLink to="/gallery" class="hover:text-blue-500 transition-colors whitespace-nowrap">画廊</RouterLink></li>
+        <li><RouterLink to="/about" class="hover:text-blue-500 transition-colors whitespace-nowrap">关于</RouterLink></li>
     </ul>
 
   </nav>
