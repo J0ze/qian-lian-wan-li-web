@@ -9,7 +9,7 @@
 
     <div v-if="showImages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl w-full">
       <div 
-        v-for="(image, index) in images" 
+        v-for="(image, index) in imageUrls" 
         :key="index"
         class="bg-white rounded-lg shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105"
       >
@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref,computed } from 'vue';
 
 // 这行代码控制画作的显示。
 // 只需要将 false 改为 true，下方的画作就会重新显示。
@@ -44,6 +44,10 @@ const images = ref<string[]>([
   '/src/assets/gallery/ciallo4.png',
   // 你可以根据需要添加更多图片
 ]);
+
+const imageUrls = computed(() => {
+  return images.value.map(image => new URL(image, import.meta.url).href);
+});
 </script>
 <style scoped>
 @keyframes fadeIn {
