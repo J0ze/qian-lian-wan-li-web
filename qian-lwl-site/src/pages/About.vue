@@ -2,8 +2,8 @@
   <section class="min-h-screen bg-gray-50 text-gray-800 flex flex-col items-center py-12 px-6">
     
     <div class="text-center mb-10 sm:mb-16 pt-8 animate-fadeIn">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 tracking-wider">ABOUT</h1>
-      <p class="text-base sm:text-lg text-gray-600 mt-2 font-serif">关于我们</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-800 tracking-wider">ABOUT</h1>
+      <p class="text-base sm:text-lg text-blue-800 mt-2 font-serif">关于我们</p>
     </div>
 
     <div class="max-w-4xl w-full p-4 sm:p-8 bg-white rounded-lg shadow-xl animate-fadeIn delay-200">

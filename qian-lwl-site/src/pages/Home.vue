@@ -22,7 +22,7 @@ import { useGameStore } from '@/stores/game';
 
 // 获取路由实例
 const route = useRoute();
-
+// 获取数据实例
 const game = useGameStore();
 
 defineProps({

@@ -11,8 +11,6 @@
         <span class="text-gray-400">|</span>
         <a href="#" class="hover:text-purple-600 transition-colors duration-200 mx-2">Galgame同好会</a>
         <span class="text-gray-400">|</span>
-        <a href="#" class="hover:text-purple-600 transition-colors duration-200 mx-2">大连理工大学</a>
-        <span class="text-gray-400">|</span>
         <a href="#" class="hover:text-purple-600 transition-colors duration-200 mx-2">隐私所有</a>
       </div>
     </div>

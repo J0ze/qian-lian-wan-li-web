@@ -3,8 +3,8 @@
     class="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-6"
   >
     <div class="text-center mb-10 sm:mb-16 pt-8 animate-fadeIn">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 tracking-wider">GALLERY</h1>
-      <p class="text-base sm:text-lg text-gray-600 mt-2 font-serif">源于美术组</p>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wider text-blue-800">GALLERY</h1>
+      <p class="text-base sm:text-lg text-blue-800 mt-2 font-serif">源于美术组</p>
     </div>
 
     <div v-if="showImages" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl w-full">
@@ -35,18 +35,16 @@ import { ref } from 'vue';
 
 // 这行代码控制画作的显示。
 // 只需要将 false 改为 true，下方的画作就会重新显示。
-const showImages = ref(false);
+const showImages = ref(true);
 
 const images = ref<string[]>([
-  '/assets/gallery/scene1.jpg',
-  '/assets/gallery/scene2.jpg',
-  '/assets/gallery/scene3.jpg',
-  '/assets/gallery/scene4.jpg',
-  '/assets/gallery/scene5.jpg',
+  '/src/assets/gallery/ciallo1.png',
+  '/src/assets/gallery/ciallo2.png',
+  '/src/assets/gallery/ciallo3.png',
+  '/src/assets/gallery/ciallo4.png',
   // 你可以根据需要添加更多图片
 ]);
 </script>
-
 <style scoped>
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
