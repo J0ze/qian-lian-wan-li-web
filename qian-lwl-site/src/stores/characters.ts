@@ -28,7 +28,10 @@ export const useCharacterStore = defineStore('characters', {
         role: '体育天赋超群的幼驯染',
         description: '青蓝计划投资者后代，蒋忱的幼驯染，体育天赋超群，小时候以欺负蒋忱为乐，活泼俏皮（富，给蒋忱氪金。分数不够但为了黏蒋忱上了盘锦的中外合办',
         outfits: [
-          new URL('/src/assets/characters/ling/ling.jpg', import.meta.url).href,
+          new URL('/src/assets/characters/ling/ling1.png', import.meta.url).href,
+          new URL('/src/assets/characters/ling/ling2.png', import.meta.url).href,
+          new URL('/src/assets/characters/ling/ling3.png', import.meta.url).href,
+          new URL('/src/assets/characters/ling/ling4.png', import.meta.url).href,
         ],
         currentOutfitIndex: 0
       },
