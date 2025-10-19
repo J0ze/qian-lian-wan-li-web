@@ -41,7 +41,10 @@ export const useCharacterStore = defineStore('characters', {
         role: '温柔沉稳的学姐',
         description: '青蓝计划设备维护者后代，温柔沉稳的学姐，托这份关系让蒋忱取得了科研机会（喜欢在句尾加“差不多酱紫',
         outfits: [
-          new URL('/src/assets/characters/ye/ye.jpg', import.meta.url).href,
+          new URL('/src/assets/characters/ye/ye1.png', import.meta.url).href,
+          new URL('/src/assets/characters/ye/ye2.png', import.meta.url).href,
+          new URL('/src/assets/characters/ye/ye3.png', import.meta.url).href,
+          new URL('/src/assets/characters/ye/ye4.png', import.meta.url).href,
         ],
         currentOutfitIndex: 0
       },
